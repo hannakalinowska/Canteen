@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
-require 'lib/canteen_scraper'
+require 'net/http'
+require './lib/canteen_scraper'
 
 get '/' do
   meals = CanteenScraper.meals
