@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 require 'net/http'
+require 'nokogiri'
 require './lib/canteen_scraper'
 
 get '/' do
